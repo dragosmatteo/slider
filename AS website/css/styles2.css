@@ -1,0 +1,255 @@
+/* !Toggle Button! */
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:700px) {
+    .header.active {
+           height: 100px;
+           padding-bottom: 10px;
+           transition: all 0.3s ease-in;
+   }
+
+   .toggle-button {
+       display: flex;
+   }
+
+   .pages {
+        display: none;
+        text-align: center;
+    } 
+
+   .nav {
+       flex-direction: column;
+       justify-content: center;
+       /* align-items: flex-start; */
+   }
+
+   .nav .pages a {
+       flex-direction: column;
+       width: 100%;
+   }
+
+   .nav .pages li {
+       text-align: center;
+   }
+
+   .pages li a {
+       padding: .5rem .7rem;
+   }
+
+   .pages.active {
+       display: flex;
+       transition: all 0.3s ease;
+   }
+}
+
+/*  !Floating Icon desing CSS!  */
+
+.icons {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+}
+
+.icons ul {
+    padding: initial;
+}
+
+.icons ul svg {
+    color: #fff;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    left: -3px;
+}
+
+.icons ul .youtube svg {
+    top: 7px;
+    position: relative;
+}
+
+.icons ul li {
+    height: 40px;
+    width: 40px;
+    list-style: none;
+    padding-left: 12px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: black;
+}
+
+.icons ul .facebook {
+    background-color: #3b5998;
+}
+
+.icons ul .instagram {
+    background-color:#ff0055 ;
+}
+
+.icons ul .youtube {
+    background-color: #FF0000;
+}
+
+.icons ul .pinterest {
+    background-color: #f64141;
+    position: relative;
+}
+
+/* !Form! */
+.content-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact {
+    font-size: 60px;
+    text-align: center;
+    margin: 30px;
+    text-shadow: 0 0px 2px rgb(0, 0, 0);
+}
+
+.human {
+    margin: 0px 170px;
+    width: 350px;
+    margin-top: -50px;
+    height: auto;
+}
+
+label {
+    font-size: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    width: auto;
+    height: auto;
+    margin-top: -5px;
+}
+
+.form-label-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+.form-name, .form-email {
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 20px;
+}
+
+
+.form-label-email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+.form-name:focus , .form-email:focus , .message-box:focus {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(226, 226, 226);
+    transition: all 0.3s ease;
+}
+
+.message-box {
+    padding-left: 20px;
+    border-radius: 20px;
+    width: 90%;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.btn {
+    color: #fff;
+    padding: 7px;
+    font-size: 20px;
+    width: 30%;
+    background-color: #FF0000;
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -35px;
+}
+
+.pin {
+    color: red;
+}
+
+/* !Responsive! */
+
+@media (max-width:1125px) {
+    .human {
+        margin: 0px 100px;
+        width: auto;
+        margin-top: -50px;
+        height: auto;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .human {
+        display: none;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        font-size: 19px;
+        width: auto;
+        height: auto;
+        margin-top: -5px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+    
+}
+
+@media (max-width:700px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        font-size: 19px;
+        width: auto;
+        height: auto;
+        margin-top: -5px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left:15%;
+    }
+}

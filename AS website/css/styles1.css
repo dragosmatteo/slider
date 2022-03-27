@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Sawarabi+Gothic&display=swap');
+
+/* font-family: 'Sawarabi Gothic', sans-serif; */
+
+:root {
+    -color--header: #FA9A43;
+    -color--social: #FF0000;
+    -color--footer: #FF9E68;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Satisfy', cursive;
+}
+
+/* body {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    background-image: url('/images/Photography-LogoColors\ 1.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
+
+header {
+    max-width: 100%;
+    height: 80px;
+    background-color: #FA9A43;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    margin: 0 -100px;
+}
+
+.nav .logo a{
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.nav .pages a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav .pages li {
+    list-style: none;
+    display: inline;
+    font-size: 30px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.nav .pages li::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: transparent;
+    width: 0%;
+    bottom: -0.1rem;
+    left: 15%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav .pages li:hover::after {
+    background-color: #fff;
+    width: 70%;
+}
+
+
+/*  !Floating Icon desing CSS!  */
+.icons {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+}
+
+.icons ul {
+    padding: initial;
+}
+
+.icons ul svg {
+    color: #fff;
+    width: 85%;
+    position: relative;
+    top: 2px;
+}
+
+.icons ul .youtube svg {
+    top: 5px;
+    position: relative;
+}
+
+.icons ul li {
+    height: 40px;
+    width: 35px;
+    list-style: none;
+    padding-left: 12px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: black;
+}
+
+.icons ul .facebook {
+    background-color: #3b5998;
+}
+
+.icons ul .instagram {
+    background-color:#ff0055 ;
+}
+
+.icons ul .youtube {
+    background-color: #FF0000;
+}
+
+.icons ul .pinterest {
+    background-color: #f64141;
+    position: relative;
+}
+
+
+/* !Content-page! */
+.services {
+    font-size: 50px;
+    padding-left: 200px;
+    padding-top: 30px;
+    /* filter: blur(0.4px); */
+    text-shadow: 0 0px 2px rgb(0, 0, 0);
+}
+
+.vector {
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.canon {
+    position: absolute;
+    z-index: 1;
+    right: 90px;
+    bottom: 20px;
+    width: 27%;
+}
+
+/* !Actual! */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cub:hover, .cub1:hover ,.cub2:hover {
+    background-color: rgb(116, 113, 113);
+    color: #fff;
+    transition: ease-in 0.5s all;
+}
+
+.cub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(167, 163, 163);
+    height: 300px;
+    width: 270px;
+    margin: 20px 0px 0 200px;
+}
+
+.cub1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(167, 163, 163);
+    height: 300px;
+    width: 270px;
+    margin: 20px 50px;
+}
+
+.cub img {
+    width: 250px;
+    height: auto;
+}
+
+.cub1 img {
+    width: 250px;
+    height: auto;
+}
+
+.cub1 .event, .price {
+    font-size: 25px;
+    padding-top: 35px;
+}
+
+.cub .event, .price {
+    font-size: 25px;
+    padding-top: 35px;
+}
+
+.cub2 img {
+    width: 250px;
+    height: auto;
+}
+
+.cub2 .event, .price {
+    font-size: 25px;
+    padding-top: 2px;
+}
+
+.cub2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(167, 163, 163);
+    height: 300px;
+    width: 270px;
+    margin: 20px 0px;
+}
+
+.cub2 .imgcub {
+    padding-bottom: 15px;
+}
+
+/* !Responsive! */
+
+@media (max-width:1250px) {
+    .services {
+        font-size: 50px;
+        padding-left: 130px;
+        padding-top: 30px;
+        /* filter: blur(0.4px); */
+        text-shadow: 0 0px 2px rgb(0, 0, 0);
+    }
+
+    .vector {
+        position: absolute;
+        bottom: -70px;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .canon {
+        position: absolute;
+        z-index: 1;
+        right: 90px;
+        bottom: 10px;
+        width: 20%;
+        display: none;
+    }
+
+    .cub {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(167, 163, 163);
+        height: 300px;
+        width: 270px;
+        margin: 10px 0px 0 130px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !Toggle Button! */
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:700px) {
+     .header.active {
+            height: 100px;
+            padding-bottom: 10px;
+            transition: all 0.3s ease-in;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .pages {
+         display: none;
+         text-align: center;
+     } 
+
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: flex-start; */
+    }
+
+    .nav .pages a {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav .pages li {
+        text-align: center;
+    }
+
+    .pages li a {
+        padding: .5rem .7rem;
+    }
+
+    .pages.active {
+        display: flex;
+        transition: all 0.3s ease;
+    }
+}
+
+
+/* !Responsive! */

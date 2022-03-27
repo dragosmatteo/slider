@@ -1,0 +1,244 @@
+:root {
+    --color-bg-1:#ffffff;
+    --color-bg-2:#f2f2f2;
+    --color-bg-3:#808589;
+    --color-bg-4:#f9fafb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-bg-1);
+    display: flex;
+    flex-direction: column;
+    font-family: arial, sans-serif;
+    padding: auto;
+    margin: auto;
+}
+
+/* !Header! */
+header {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 60px;
+}
+
+.nav {
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#up {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    float: right;
+}
+
+.svg-inline--fa{
+    height: 20px;
+    width: 20px;
+    color: var(--color-bg-3);
+}
+
+.user {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+}
+
+li {
+    padding-left: 25px;
+}
+
+.text:hover {
+    text-decoration: underline;
+}
+
+.logo {
+   display: block;
+   text-align: center;
+   max-height: 100%;
+   max-width: 100%;
+   padding-top: 70px;
+   
+}
+
+/* !Container! */
+form {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+form .input[type="text"] {
+    width: 540px;
+    height: 44px;
+    border:none;
+    padding:1px 45px 1px 15px;
+    font-size: 15px;
+}
+
+form .search:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.search {
+    border-radius: 25px;
+    width: 540px;
+    height: 44px;
+    border-radius: 999px;
+    border:3px solid var(--color-bg-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+
+form .input[type="text"]:focus {
+    outline: none;
+}
+
+.fa-keyboard{
+    position: relative;
+    left: -80px;
+}
+
+.butoane {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+button {
+    font-size:14px;
+    padding: 8px 18px;
+    background-color: #f8f9fa;
+    border: none;
+    margin-left: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #3c4043;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    border: 1px solid #f0f0f0;
+    box-shadow: 0px 0px 2px 0px #c7c7c7;
+}
+
+.li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+.li a{
+    text-decoration: none;
+    color: #372bb5;
+    font-size: 13px;
+}
+
+.li a:hover{
+    text-decoration: underline;
+}
+
+.limbi {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+}
+
+.g1 {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* !Footer! */
+footer .section_1 {
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--color-bg-2); 
+    position: absolute;
+    bottom: 45px;
+    display: flex;
+}
+
+footer .section_1 .tara{
+   color: var(--color-bg-3);
+   padding-left: 30px;
+   padding-top: 15px;
+}
+
+ footer .section_2 {
+    width: 100%;
+    min-height: 45px;
+    background-color: var(--color-bg-2);
+    bottom: 0;
+    position: absolute;
+    border-top:2px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .section_2 .list_1 .footer_list {
+    padding-left: 10px; 
+    flex: 50%;
+}
+
+footer .section_2 .list_1 .footer_list a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--color-bg-3);
+    font-size: 14px;
+}
+
+footer .section_2 .list_1 .footer_list .th, .th1 {
+    display: inline;
+}
+
+footer .section_2 .list_1 .footer_list a:hover {
+    text-decoration: underline;
+}
+
+footer .section_2 .list_2 .footer_list1 a:hover {
+    text-decoration: underline;
+}
+
+footer .section_2 .list_2 .footer_list1 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--color-bg-3);
+    font-size: 14px;
+}
+
+footer .section_2 .list_2 .footer_list1 {
+    padding-right: 30px; 
+}

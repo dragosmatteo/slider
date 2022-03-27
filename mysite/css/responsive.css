@@ -1,0 +1,22 @@
+@media (max-width: 1400px) {
+    header {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Aladin', cursive;
+    }
+}

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Sawarabi+Gothic&display=swap');
+
+/* font-family: 'Sawarabi Gothic', sans-serif; */
+
+:root {
+    -color--header: #FA9A43;
+    -color--social: #FF0000;
+    -color--footer: #FF9E68;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Satisfy', cursive;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    background-image: url('/images/Photography-LogoColors\ 1.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+header {
+    max-width: 100%;
+    height: 80px;
+    background-color: #FA9A43;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    margin: 0 -100px;
+}
+
+.nav .logo a{
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.nav .pages a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav .pages li {
+    list-style: none;
+    display: inline;
+    font-size: 30px;
+    padding: 0 10px;
+    position: relative;
+}
+
+@media (min-width:1000px){
+    .nav .pages li::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: transparent;
+        width: 0%;
+        bottom: -0.1rem;
+        left: 15%;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+    
+    .nav .pages li:hover::after {
+        background-color: #fff;
+        width: 70%;
+    }
+}
+
+/* !Toggle Button! */
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:700px) {
+     .header.active {
+            height: 100px;
+            padding-bottom: 10px;
+            transition: all 0.3s ease-in;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .pages {
+         display: none;
+     } 
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav .pages a {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav .pages li {
+        text-align: center;
+    }
+
+    .pages li a {
+        padding: .5rem .7rem;
+    }
+
+    .pages.active {
+        display: flex;
+        transition: all 0.3s ease-in;
+    }
+}
+
+
+
+/* !Container! */
+.container {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.center {
+    margin: 150px auto 120px auto;
+}
+
+.name {
+    font-size: 70px;
+    filter: blur(0.5px);
+    text-shadow: 0 2px 10px #fff;
+}
+
+.undername {
+    font-size: 40px;
+    filter: blur(0.5px);
+    text-shadow: 0 0px 7px #fff;
+}
+
+.undername:hover, .name:hover {
+    text-shadow: 0 0px 5px #fff;
+    transition: all 0.3s ease;
+}
+
+.subcenter .under {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 30px;
+    margin-top: -30px auto;
+    font-weight: bold;
+}
+
+.subcenter button {
+    font-family: 'Satisfy', cursive;
+    padding: 1px 25px;
+    font-size: 25px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px 5px;
+    cursor: pointer;
+    border: none;
+    border: 3px solid transparent;
+}
+
+.subcenter button:active {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 1px 23px;
+}
+
+.subcenter button a {
+    color: black;
+    text-decoration: none;
+}
+
+/*  !Floating Icon desing CSS!  */
+.icons {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+}
+
+.icons ul {
+    padding: initial;
+}
+
+.icons ul svg {
+    color: #fff;
+    width: 85%;
+    position: relative;
+    top: 2px;
+}
+
+.icons ul .youtube svg {
+    top: 5px;
+    position: relative;
+}
+
+.icons ul li {
+    height: 40px;
+    width: 35px;
+    list-style: none;
+    padding-left: 12px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: black;
+}
+
+.icons ul .facebook {
+    background-color: #3b5998;
+}
+
+.icons ul .instagram {
+    background-color:#ff0055 ;
+}
+
+.icons ul .youtube {
+    background-color: #FF0000;
+}
+
+.icons ul .pinterest {
+    background-color: #f64141;
+    position: relative;
+}
+
+/* !Responsive! */ 
+
+@media (max-width:1200px) {
+    body {
+        font-family: 'Satisfy', cursive;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        background-image: url('/images/Photography-LogoColors\ 1.png');
+        background-repeat: no-repeat; 
+        background-size:auto;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 15px;
+        margin: 0 -70px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .center {
+        margin: 130px auto 100px auto;
+    }
+
+    .name {
+        font-size: 60px;
+        filter: blur(0.5px);
+        text-shadow: 0 2px 10px #fff;
+    }
+    
+    .undername {
+        font-size: 35px;
+        filter: blur(0.5px);
+        text-shadow: 0 0px 7px #fff;
+    }
+
+    .subcenter .under {
+        font-family: 'Sawarabi Gothic', sans-serif;
+        font-size: 27px;
+        margin-top: -30px auto;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 650px) {
+    .center {
+        margin: 100px auto 100px auto;
+    }
+
+    .name {
+        font-size: 50px;
+        filter: blur(0.5px);
+        text-shadow: 0 2px 10px #fff;
+    }
+    
+    .undername {
+        font-size: 30px;
+        filter: blur(0.5px);
+        text-shadow: 0 0px 7px #fff;
+    }
+
+    .subcenter .under {
+        font-family: 'Sawarabi Gothic', sans-serif;
+        font-size: 25px;
+        margin-top: -30px auto;
+        font-weight: bold;
+    }
+}
